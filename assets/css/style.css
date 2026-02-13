@@ -43485,7 +43485,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #9a9a9a;
-  font-size: 11px;
+  font-size: 9px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43510,12 +43510,7 @@ body {
   transform: scale(0.96);
 }
 
-/* DESKTOP HIDE */
-@media (min-width: 992px) {
-  .elto-bottom-nav {
-    display: none;
-  }
-}
+
 
 
 /* ===== REQUEST BODY (URBAN-STYLE) ===== */
