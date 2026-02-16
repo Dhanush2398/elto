@@ -606,7 +606,7 @@ img {
 
 /* Logo container */
 .logo {
-  height: 120px;
+  height: 50px;
   width: auto;
   max-width: 300px;
   display: block;
@@ -16118,7 +16118,7 @@ header.style-3.two .main-menu>ul>li.active>a i {
 
 @media (max-width: 767px) {
   .home2-testimonial-section {
-    padding: 70px 0;
+    padding: 10px 0;
   }
 }
 
@@ -41389,13 +41389,13 @@ header.style-3.two .main-menu>ul>li.active>a i {
 
 
 }
-
+/* 
 @media (min-width: 992px) {
 
   .menu-list {
     padding-left: 280px !important;
   }
-}
+} */
 
 @media (min-width: 992px) {
   .menu-list li a {
@@ -43161,7 +43161,7 @@ body {
 
 /* Logo */
 .app-robo {
-  height: 44px;
+  height: 34px;
   width: auto;
   flex-shrink: 0;
 }
@@ -43492,6 +43492,7 @@ body {
   justify-content: center;
   gap: 4px;
   transition: color 0.25s ease;
+  line-height: 1;
 }
 
 /* ICON */
@@ -44329,7 +44330,7 @@ body.cart-page {
 }
 
 .top-offer-text-slider-section {
-    background: #f4c400; /* premium yellow */
+    background: #f4c400;
     padding: 8px 0;
     font-size: 14px;
     font-weight: 500;
@@ -44378,29 +44379,29 @@ body.cart-page {
 }
 
 .service-card {
-  height: 110px;
+  height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .services-row {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .services-row .swiper {
-  padding: 10px 50px;
+  padding: 20px 50px;
 }
 
 @media (max-width: 768px) {
   .services-row .swiper {
-    padding: 0 40px;
+    padding: 10px 40px;
   }
 }
 
 @media (max-width: 576px) {
   .services-row .swiper {
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -44421,7 +44422,6 @@ body.cart-page {
 
 .service-card span {
   font-weight: 600;
-  font-size: 14px;
   color: #333;
 }
 
@@ -44557,7 +44557,7 @@ body.cart-page {
 ================================ */
 
 .categories-section {
-  padding: 60px 5%;
+  padding: 20px 2%;
   background: #f5f5f5;
 }
 
@@ -44624,7 +44624,7 @@ body.cart-page {
   left: 10px;
   right: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   background: rgba(0,0,0,0.5);
   padding: 6px 8px;
@@ -44758,8 +44758,8 @@ body.cart-page {
 ===================================== */
 
 .labour-services-section {
-    padding: 90px 0;
-    background: #e9edf3; /* soft app-like grey */
+    padding: 20px 0;
+    background: #e9edf3;
 }
 .section-header h2,p{
   color: #662A53;
@@ -44770,8 +44770,8 @@ body.cart-page {
 
 .labour-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 35px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
 }
 
 /* =====================================
@@ -44781,20 +44781,17 @@ body.cart-page {
 .labour-card {
     background: #ffffff;
     border-radius: 26px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     color: #222;
-
     border: 1px solid #662a53;
-
     transition: all 0.35s ease;
-
     box-shadow: 
         0 6px 20px rgba(0,0,0,0.05);
 }
 
-/* Hover Effect */
+
 .labour-card:hover {
     transform: translateY(-8px);
     border-color: #cfd6e2;
@@ -44807,19 +44804,14 @@ body.cart-page {
 ===================================== */
 
 .labour-img {
-    width: 130px;
     height: 130px;
-    margin: 0 auto 25px auto;
-
+    margin: 0 auto 5px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background: #f4f6fa;
+    background: #fff;
     border-radius: 24px;
-
     border: 1px solid #e6e9f0;
-
     box-shadow:
         inset 4px 4px 8px rgba(0,0,0,0.04),
         inset -4px -4px 8px rgba(255,255,255,0.9);
@@ -44861,39 +44853,50 @@ body.cart-page {
 }
 
 @media (max-width: 768px) {
+
+    .labour-services-section {
+        padding: 15px 10px;   /* reduce side spacing */
+    }
+
     .labour-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;           /* smaller gap */
     }
 
     .labour-card {
-        padding: 35px 15px;
+        padding: 8px 6px;    /* tighter card */
+        border-radius: 18px; /* slightly smaller radius */
     }
 
     .labour-img {
-        width: 110px;
-        height: 110px;
+        height: 75px;        /* smaller image area */
+        border-radius: 16px;
+    }
+
+    .labour-card h4 {
+        font-size: 13px;
+        line-height: 1.2;
     }
 }
 
 @media (max-width: 480px) {
+
+    .labour-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
     .labour-img {
-        width: 95px;
-        height: 95px;
+        height: 65px;     /* only control height */
+        width: 100%;      /* let it adapt */
     }
 
     .labour-card h4 {
-        font-size: 14px;
+        font-size: 11px;
+        line-height: 1.1;
     }
 }
 
-
-
-
-/* ==============================
-   SERVICE DETAILS – ELTO BRAND
-   Colors: #662A53 & #FFD100
-================================ */
 
 /* ===== SECTION BACKGROUND ===== */
 .service-details-section {
@@ -44908,11 +44911,11 @@ body.cart-page {
     justify-content: space-between;
     gap: 60px;
     background: #ffffff;
-    padding: 50px;
+    padding: 20px;
     border-radius: 28px;
     border: 2px solid #662A53;
     box-shadow: 0 25px 60px rgba(102, 42, 83, 0.15);
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 /* LEFT SIDE */
@@ -44987,11 +44990,13 @@ body.cart-page {
 /* ===== SERVICE INCLUDES ===== */
 .service-includes {
     background: #ffffff;
-    padding: 40px;
+    padding: 10px;
     border-radius: 24px;
     border-left: 6px solid #662A53;
     box-shadow: 0 15px 45px rgba(0,0,0,0.05);
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    border: 2px solid #662A53;
+
 }
 
 .service-includes h3 {
@@ -45030,12 +45035,12 @@ body.cart-page {
 .why-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 15px;
 }
 
 .why-card {
     background: #ffffff;
-    padding: 30px;
+    padding: 10px;
     border-radius: 22px;
     border-top: 5px solid #FFD100;
     box-shadow: 0 15px 35px rgba(102, 42, 83, 0.08);
@@ -45061,7 +45066,7 @@ body.cart-page {
 /* ===== FAQ SECTION ===== */
 .faq-section {
     background: #ffffff;
-    padding: 40px;
+    padding: 10px;
     border-radius: 24px;
     border: 2px solid #FFD100;
     box-shadow: 0 20px 50px rgba(102, 42, 83, 0.08);
@@ -45122,11 +45127,11 @@ body.cart-page {
 @media (max-width: 768px) {
 
     .service-details-section {
-        padding: 60px 0;
+        padding: 20px 0;
     }
 
     .service-header {
-        padding: 30px;
+        padding: 5px;
     }
 
     .why-grid {
@@ -45150,13 +45155,13 @@ body.cart-page {
 ================================ */
 
 .booking-section {
-    padding: 90px 0;
+    padding: 10px 0;
     background: linear-gradient(135deg, #f6f7fb, #eef1f6);
 }
 
 .booking-wrapper {
     display: flex;
-    gap: 50px;
+    gap: 10px; 
 }
 
 /* LEFT SIDE */
@@ -45172,9 +45177,9 @@ body.cart-page {
 
 .booking-card {
     background: #ffffff;
-    padding: 30px;
+    padding: 10px;
     border-radius: 20px;
-    border: 1px solid #e4e6eb;
+    border: 1px solid #ffd100;
     box-shadow: 0 15px 35px rgba(0,0,0,0.05);
     margin-bottom: 30px;
 }
@@ -45182,6 +45187,7 @@ body.cart-page {
 .booking-card h4 {
     margin-bottom: 20px;
     font-weight: 700;
+    color: #662A53;
 }
 
 /* Service Summary */
@@ -45247,7 +45253,7 @@ body.cart-page {
     background: #ffffff;
     padding: 35px;
     border-radius: 24px;
-    border: 1px solid #e4e6eb;
+    border: 1px solid #ffd100;
     box-shadow: 0 20px 45px rgba(0,0,0,0.06);
     position: sticky;
     top: 100px;
@@ -45267,6 +45273,7 @@ body.cart-page {
 .price-row.total {
     font-weight: 700;
     font-size: 18px;
+    color: #662a53;
 }
 
 .confirm-btn {
